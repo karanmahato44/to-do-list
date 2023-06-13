@@ -12,9 +12,9 @@ function renderTodoList() {
     const { name, dueDate } = todoObject;
 
     const html = `
-      <div class="mt-2 border border-red-400 whitespace-wrap overflow-hidden">${name}</div>
-      <div class="mt-2 border border-blue-400 items-center">${dueDate}</div>
-      <div class="mt-2 border border-green-400"><button class="bg-red-400 rounded-full w-20 h-full cursor:pointer items-center" onclick="
+      <div class="mt-4 whitespace-normal text-center">${name}</div>
+      <div class="mt-4">${dueDate}</div>
+      <div class="mt-4"><button class="bg-red-400 rounded-full w-20 sm:w-36 h-full cursor:pointer" onclick="
       todoList.splice(${i}, 1);
       renderTodoList();">delete</button></div>
     `;

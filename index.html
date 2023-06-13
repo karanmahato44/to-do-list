@@ -8,15 +8,15 @@
   <title>todo list app</title>
 </head>
 
-<body class="flex flex-col justify-center w-4/5 border border-green-400 mx-auto">
-  <div class="text-center my-10 text-4xl font-bold">yo garna xa!</div>
+<body class="flex flex-col justify-center w-4/5 mx-auto mt-10 border">
+  <div class="text-center mb-10 text-4xl font-bold">yo garna xa!</div>
 
-  <div class="grid grid-cols-3 justify-items-center rounded-md gap-2 border"><!-- container begin -->
-    <div><input class="js-text-input border border-black w-full rounded outline-none px-1" onkeydown="foo(event);" type="text" placeholder="todo name..."></div>
-    <div><input class="js-due-date-input border border-black rounded px-1" type="date"></div>
-    <div><button class="bg-green-400 rounded-full w-20 h-full cursor:pointer" onclick="addTodo();">Add</button></div>
+  <div class="grid grid-cols-3 justify-items-center"><!-- container after heading begin -->
+    <div><input class="js-text-input border border-black rounded outline-none px-1 w-20 sm:w-36" onkeydown="foo(event);" type="text" placeholder="todo?..."></div>
+    <div><input class="js-due-date-input border border-black rounded px-1 w-20 sm:w-36" type="date"></div>
+    <div><button class="bg-green-400 rounded-full w-20 sm:w-36 h-full cursor:pointer" onclick="addTodo();">Add</button></div>
   </div>
-  <div class="js-show-todolist border items-center grid grid-cols-3 justify-items-center w-full mx-auto whitespace-normal gap-2 border border-red-400 mt-4"></div>
+  <div class="js-show-todolist grid grid-cols-3 justify-items-center w-full items-center mt-8 pb-4"></div>
   <script src="index.js"></script>
 </body>
 
